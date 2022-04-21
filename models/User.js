@@ -16,7 +16,7 @@ const studentSchema = new Schema(
       unique: true,
       validate: {
         validator: function (v) {
-          return /\d{3}-\d{3}-\d{4}/.test(v);
+          return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
         },
         message: (props) => `${props.value} is not a valid phone number!`,
       },
