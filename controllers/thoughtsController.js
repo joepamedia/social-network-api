@@ -29,4 +29,23 @@ module.exports = {
         return res.status(500).json(err);
       });
   },
+  // delete a thought
+  deleteThought(req, res) {
+    Thought.findOneAndDelete({ _id: req.params.thoughtId })
+      .then((thought) => {
+        !thought
+          ? res.status(404).json({ message: "No thought with that ID" })
+          : res.json({ message: "Thought deleted!" });
+        return User.findOneAndUpdate(
+          {
+            thoughts: req.params.thoughtId,
+          },
+          {
+            $pull: { thoughts: req.params.thoughtId },
+          },
+          { new: true }
+        );
+      })
+      .catch((err) => res.status(500).json(err));
+  },
 };
