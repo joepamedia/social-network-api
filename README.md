@@ -51,6 +51,5 @@ This is a back end API that reads, updates, and deletes data from a database tha
 
    ## Email
    ### josephpalmisano18@gmail.com
-   ## GitHub Info 
    ### Author
    ### Joe Palmisano
