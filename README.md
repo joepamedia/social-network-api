@@ -14,7 +14,7 @@
 [Click Here](https://drive.google.com/file/d/1s3fG4lNIx6JLuI1l_IKpE40ryEcdaC-5/view)
 
 # Description 
-This is a project that collects data from the user through prompted questions via the command line. The motivation to create this was for the user to easily be able to create a profile for their team with specific parameters. This was created with Node JS, using inquirer, which prompts the user, and jest, which helps run tests on the project. This solves the amount of time it would take for the user to manually create a website with their team profile, as this quickly creates a styled website with the users specified data that was collected through the console prompts. I learned how to create an html file with the user's data and collect and display specific kinds of data that was collected from the user. 
+This is a back end API that reads, updates, and deletes data from a database that uses NoSQL. The user can create a profile and thought, view other thoughts and users, update thoughts and user information, and delete thoughts and user information. This solves the issue of not having a back end for a social network. 
   
   # Installation
   First, make sure you have Node.js installed. [Click here](https://nodejs.org/en/download/) to install Node JS. 
@@ -32,6 +32,7 @@ This is a project that collects data from the user through prompted questions vi
    ```
    npm run start
    ```
+   Upon the server being started, the Mongoose models and synced to MongoDB, where the data is stored. When the user enters a proper route in thunder client, it will respond back with the nested data in JSON format. 
 
   # Contributions
   If you wish to contribute, contact me via email at josephpalmisano18@gmail.com
@@ -41,14 +42,12 @@ This is a project that collects data from the user through prompted questions vi
   
 
   # Links
-[Repo](https://github.com/joepamedia/tech-blog)
-
-[Deployed Link](https://tech-blog-joepa.herokuapp.com/)
+[Repo](https://github.com/joepamedia/social-network-api)
 
   # Questions
   If you have any questions, please contact me using a method below.   
-  ## GitHub
-   ### [Github](https://github.com/joepamedia/)
+  
+  ### [Github](https://github.com/joepamedia/)
 
    ## Email
    ### josephpalmisano18@gmail.com
